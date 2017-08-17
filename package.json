@@ -1,0 +1,26 @@
+{
+  "name": "babel-typescript-spike",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "babel -d ./build -x .ts,.tsx ./src",
+    "watch": "babel -d ./build -x .ts,.tsx ./src -w",
+    "tests": "jest"
+  },
+  "dependencies": {
+    "babel-cli": "^7.0.0-alpha.19",
+    "babel-core": "^7.0.0-alpha.19",
+    "babel-preset-env": "^2.0.0-alpha.19",
+    "babel-preset-stage-0": "^7.0.0-alpha.19",
+    "babel-preset-stage-1": "^7.0.0-alpha.19",
+    "babel-preset-stage-2": "^7.0.0-alpha.19",
+    "babel-preset-stage-3": "^7.0.0-alpha.19",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "transform": {
+    }
+  }
+}
