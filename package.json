@@ -19,8 +19,22 @@
     "jest": "^20.0.4"
   },
   "jest": {
-    "mapCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.ts",
+      "**/*.tsx"
+    ],
     "transform": {
-    }
+      ".*": "./transform.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "json",
+      "jsx",
+      "js"
+    ],
+    "testMatch": [
+      "**/*.test.tsx"
+    ]
   }
 }
