@@ -8,21 +8,23 @@
     "tests": "jest"
   },
   "dependencies": {
-    "babel-cli": "^7.0.0-alpha.19",
-    "babel-core": "^7.0.0-alpha.19",
-    "babel-preset-env": "^2.0.0-alpha.19",
-    "babel-preset-stage-0": "^7.0.0-alpha.19",
-    "babel-preset-stage-1": "^7.0.0-alpha.19",
-    "babel-preset-stage-2": "^7.0.0-alpha.19",
-    "babel-preset-stage-3": "^7.0.0-alpha.19",
-    "babel-preset-typescript": "^7.0.0-alpha.19",
-    "jest": "^20.0.4"
+    "@types/jest": "^20.0.8",
+    "babel-cli": "^7.0.0-alpha.20",
+    "babel-core": "^7.0.0-alpha.20",
+    "babel-preset-env": "^2.0.0-alpha.20",
+    "babel-preset-stage-0": "^7.0.0-alpha.20",
+    "babel-preset-stage-1": "^7.0.0-alpha.20",
+    "babel-preset-stage-2": "^7.0.0-alpha.20",
+    "babel-preset-stage-3": "^7.0.0-alpha.20",
+    "babel-preset-typescript": "^7.0.0-alpha.20",
+    "jest": "^21.0.0"
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.ts",
-      "**/*.tsx"
+      "src/**/*.ts",
+      "src/**/*.tsx"
     ],
+    "mapCoverage": true,
     "transform": {
       ".*": "./transform.js"
     },
@@ -34,6 +36,7 @@
       "js"
     ],
     "testMatch": [
+      "**/*.test.ts",
       "**/*.test.tsx"
     ]
   }
