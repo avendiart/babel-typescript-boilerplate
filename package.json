@@ -1,7 +1,7 @@
 {
   "name": "babel-typescript-boilerplate",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "babel -d ./build -x .ts,.tsx ./src",
     "watch": "babel -d ./build -x .ts,.tsx ./src -w",
